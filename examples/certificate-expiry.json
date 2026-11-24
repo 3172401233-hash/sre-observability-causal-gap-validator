@@ -1,0 +1,78 @@
+{
+  "analyzedAt": "2026-11-24T02:10:00.000Z",
+  "telemetry": {
+    "tenant-a": {
+      "metrics": [
+        { "timestamp": "2026-11-24T02:00:00.000Z", "tenantId": "tenant-a", "count": 100 },
+        { "timestamp": "2026-11-24T02:01:00.000Z", "tenantId": "tenant-a", "count": 102 },
+        { "timestamp": "2026-11-24T02:02:00.000Z", "tenantId": "tenant-a", "count": 98 },
+        { "timestamp": "2026-11-24T02:03:00.000Z", "tenantId": "tenant-a", "count": 101 },
+        { "timestamp": "2026-11-24T02:04:00.000Z", "tenantId": "tenant-a", "count": 99 },
+        { "timestamp": "2026-11-24T02:05:00.000Z", "tenantId": "tenant-a", "count": 0 },
+        { "timestamp": "2026-11-24T02:06:00.000Z", "tenantId": "tenant-a", "count": 0 },
+        { "timestamp": "2026-11-24T02:07:00.000Z", "tenantId": "tenant-a", "count": 0 },
+        { "timestamp": "2026-11-24T02:08:00.000Z", "tenantId": "tenant-a", "count": 0 },
+        { "timestamp": "2026-11-24T02:09:00.000Z", "tenantId": "tenant-a", "count": 100 }
+      ],
+      "logs": [
+        { "timestamp": "2026-11-24T02:00:00.000Z", "tenantId": "tenant-a", "count": 50 },
+        { "timestamp": "2026-11-24T02:01:00.000Z", "tenantId": "tenant-a", "count": 52 },
+        { "timestamp": "2026-11-24T02:02:00.000Z", "tenantId": "tenant-a", "count": 49 },
+        { "timestamp": "2026-11-24T02:03:00.000Z", "tenantId": "tenant-a", "count": 51 },
+        { "timestamp": "2026-11-24T02:04:00.000Z", "tenantId": "tenant-a", "count": 50 },
+        { "timestamp": "2026-11-24T02:05:00.000Z", "tenantId": "tenant-a", "count": 0 },
+        { "timestamp": "2026-11-24T02:06:00.000Z", "tenantId": "tenant-a", "count": 0 },
+        { "timestamp": "2026-11-24T02:07:00.000Z", "tenantId": "tenant-a", "count": 0 },
+        { "timestamp": "2026-11-24T02:08:00.000Z", "tenantId": "tenant-a", "count": 0 },
+        { "timestamp": "2026-11-24T02:09:00.000Z", "tenantId": "tenant-a", "count": 50 }
+      ],
+      "traces": [
+        { "timestamp": "2026-11-24T02:00:00.000Z", "tenantId": "tenant-a", "count": 10, "sampleRate": 0.1 },
+        { "timestamp": "2026-11-24T02:01:00.000Z", "tenantId": "tenant-a", "count": 11, "sampleRate": 0.1 },
+        { "timestamp": "2026-11-24T02:02:00.000Z", "tenantId": "tenant-a", "count": 9, "sampleRate": 0.1 },
+        { "timestamp": "2026-11-24T02:03:00.000Z", "tenantId": "tenant-a", "count": 10, "sampleRate": 0.1 },
+        { "timestamp": "2026-11-24T02:04:00.000Z", "tenantId": "tenant-a", "count": 10, "sampleRate": 0.1 },
+        { "timestamp": "2026-11-24T02:05:00.000Z", "tenantId": "tenant-a", "count": 0, "sampleRate": 0.1 },
+        { "timestamp": "2026-11-24T02:06:00.000Z", "tenantId": "tenant-a", "count": 0, "sampleRate": 0.1 },
+        { "timestamp": "2026-11-24T02:07:00.000Z", "tenantId": "tenant-a", "count": 0, "sampleRate": 0.1 },
+        { "timestamp": "2026-11-24T02:08:00.000Z", "tenantId": "tenant-a", "count": 0, "sampleRate": 0.1 },
+        { "timestamp": "2026-11-24T02:09:00.000Z", "tenantId": "tenant-a", "count": 10, "sampleRate": 0.1 }
+      ]
+    }
+  },
+  "collectors": [
+    {
+      "id": "collector-1",
+      "assignedTenants": ["tenant-a"],
+      "statusHistory": [
+        { "timestamp": "2026-11-24T01:00:00.000Z", "status": "running" },
+        { "timestamp": "2026-11-24T02:05:00.000Z", "status": "error", "detail": "TLS certificate expired; tenant pipeline suspended" }
+      ],
+      "certificate": {
+        "id": "cert-2026",
+        "notBefore": "2026-08-01T00:00:00.000Z",
+        "notAfter": "2026-11-23T00:00:00.000Z"
+      }
+    }
+  ],
+  "routes": [
+    { "tenantId": "tenant-a", "entry": "edge-east" }
+  ],
+  "probes": [
+    { "id": "probe-cdn-public", "entry": "cdn-public", "status": "pass" }
+  ],
+  "businessEvents": {
+    "tenant-a": [
+      { "timestamp": "2026-11-24T02:00:00.000Z", "tenantId": "tenant-a", "orders": 40 },
+      { "timestamp": "2026-11-24T02:01:00.000Z", "tenantId": "tenant-a", "orders": 41 },
+      { "timestamp": "2026-11-24T02:02:00.000Z", "tenantId": "tenant-a", "orders": 39 },
+      { "timestamp": "2026-11-24T02:03:00.000Z", "tenantId": "tenant-a", "orders": 40 },
+      { "timestamp": "2026-11-24T02:04:00.000Z", "tenantId": "tenant-a", "orders": 42 },
+      { "timestamp": "2026-11-24T02:05:00.000Z", "tenantId": "tenant-a", "orders": 41 },
+      { "timestamp": "2026-11-24T02:06:00.000Z", "tenantId": "tenant-a", "orders": 40 },
+      { "timestamp": "2026-11-24T02:07:00.000Z", "tenantId": "tenant-a", "orders": 43 },
+      { "timestamp": "2026-11-24T02:08:00.000Z", "tenantId": "tenant-a", "orders": 42 },
+      { "timestamp": "2026-11-24T02:09:00.000Z", "tenantId": "tenant-a", "orders": 40 }
+    ]
+  }
+}

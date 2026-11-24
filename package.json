@@ -1,0 +1,18 @@
+{
+  "name": "sre-observability-causal-gap-validator",
+  "version": "1.0.0",
+  "description": "离线识别遥测缺口：区分真实流量下降、采样变更与采集器故障（仅消费离线指标）",
+  "type": "module",
+  "main": "src/index.js",
+  "bin": {
+    "gap-validator": "src/cli.js"
+  },
+  "engines": {
+    "node": ">=24.16.0"
+  },
+  "scripts": {
+    "test": "node --test",
+    "start": "node src/cli.js"
+  },
+  "license": "UNLICENSED"
+}
